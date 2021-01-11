@@ -1,0 +1,37 @@
+
+<br><br>
+<h3>Cart Page</h3>
+<br><br>
+<ul class="list-group">
+     
+    <li class="list-group-item" *ngFor= " let product of data">
+    
+    <div class="row" >
+          <div class="col-5">
+      <span> <img  class="active" [src]="product['image']" width="100" height="100" alt=""></span>
+          </div>
+          <div class="col-5">
+      <strong >{{product['price'] }}EG </strong>
+         </div>
+         <div class="col-2">
+         <button class="search-btn" >
+             <!-- //(click)="removeProduct(product.id)" -->
+             Delete 
+          </button>
+          
+        </div>
+     </div>
+
+    
+   </li>
+       <li class=" list-group-item cart-btn">
+            <strong>Total : {{48}}EG</strong> <br>
+       </li>
+       
+      <li class=" list-group-item cart-btn">
+        <!-- <button type="button" class="btn  cart-btn" (click)="checkout">Checkout</button> -->
+            <strong> <a routerLink="checkout" class="text-light">Checkout <i class="fa fa-arrow-circle-right"></i></a></strong>
+       </li>
+
+
+ </ul>

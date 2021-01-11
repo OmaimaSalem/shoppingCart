@@ -1,0 +1,9 @@
+.link-secondary{
+    color: black;
+font-size: 18px;
+font-family: bold;
+text-decoration: none;
+}
+.link-secondary:hover{
+    color: rgb(228, 41, 41);
+}
